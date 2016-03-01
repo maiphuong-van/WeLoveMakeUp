@@ -25,24 +25,26 @@ body {
     padding: 0px 20px;
 }
 
-#logo, #searchBar{
+#logo, #searchBar, #resultDisplay{
     margin: 0 auto;
     width: 50%;
 }
 
 h1.search{
     font-family: 'Chewy', cursive;
-    font-size: 100px;
     padding: 0px;
-    text-align: center;
+    color: #ffffff;
 }
 
-.search{
+
+.search {
     background-color: #ff248a;
     margin: 0px;
     padding: 30px;
     color: #ffffff;
+    text-align: center;
 }
+
 
 #searchBox{
     margin: 0 auto;
@@ -137,4 +139,44 @@ a.footer-link:hover {
 a.footer-link:active {
     color: #000000;
     text-decoration: none;
+}
+
+.topMenu{
+    background-color: #ff248a;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.header{
+    position: fixed;
+    display:inline;
+}
+
+#logo{
+    top:0px;
+    left:0px;
+    padding: 20px 20px;
+}
+
+#searchSmall{
+    top:0px;
+    right:0px;
+    padding: 25px 20px;
+    width: 40%;
+}
+
+#searchBoxSmall{
+   float:right;
+}
+
+#searchBarSmall{
+    font-size: 18px;
+    border-radius: 32px;
+    height: 50px;
+    width: 350px;
+    border: 3px solid #ffffff;
+    box-shadow: 0;
+    text-align: left;
 }
