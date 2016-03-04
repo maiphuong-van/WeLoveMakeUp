@@ -12,7 +12,7 @@ body {
     padding-bottom:60px;   /* Height of the footer */
 }
 #footer {
-    position:fixed;
+    position:relative;
     bottom:0;
     width:100%;
     height:120px;   /* Height of the footer */
@@ -112,45 +112,40 @@ button:focus {
     order: 3;
 }
 
-a.search{
-    float: right;
-    padding: 0px;
-}
 
 /* unvisited link */
-a.footer-link:link {
+a.footer-link:link, a.col-two:link {
     color: #ff248a;
     text-decoration: none;
 }
 
 /* visited link */
-a.footer-link:visited {
+a.footer-link:visited, a.col-two:visited {
     color: #ff248a;
     text-decoration: none;
 }
 
 /* mouse over link */
-a.footer-link:hover {
+a.footer-link:hover, a.col-two:hover {
     color: #000000;
     text-decoration: none;
 }
 
 /* selected link */
-a.footer-link:active {
+a.footer-link:active, a.col-two:active {
     color: #000000;
     text-decoration: none;
 }
 
 .topMenu{
     background-color: #ff248a;
-    position:fixed;
     top: 0;
     width: 100%;
     height: 100px;
 }
 
 .header{
-    position: fixed;
+    position: absolute;
     display:inline;
 }
 
@@ -179,4 +174,74 @@ a.footer-link:active {
     border: 3px solid #ffffff;
     box-shadow: 0;
     text-align: left;
+}
+
+.result{
+    top:100px;
+    padding: 30px 0px;
+    width: 100%;
+    display:block;
+}
+
+#image{
+    margin: 0 auto;
+    width: 70%;
+    height: 200px;
+}
+
+body{
+    display:block;
+}
+
+.result h2{ 
+    position: relative; width: 80%;
+    top: 18px;
+    left: 10px;
+    font-family: 'Chewy', cursive;
+    color: #ff248a;
+    font-size: 60px;
+}
+
+.price {
+    display: block;
+}
+
+#price-display{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.col-two{
+    padding: 0 1%;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    color: #ff248a;
+}
+
+td{
+    height: 60px;
+}
+
+table {display: table;}
+table th td{
+    padding: 0 10px;
+}
+
+tbody, tr{
+    width: 100%;
+}
+.price-sek{
+    font-family:  'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #ff248a;
+    padding: 0 4px;
+    text-align: center;
+}
+
+th{
+    font-family:  'Chewy', cursive;
+    font-size: 40px;
+    color: #ff248a;
+    text-align: center;
+
 }
